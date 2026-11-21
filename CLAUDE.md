@@ -1,12 +1,12 @@
 # Clínica Alvorada: patient service assistant (study project)
 
-Read PLANO.md before any change. The scope is closed: do not add features outside it.
-PLANO.md is local (it is in .gitignore): do not copy its content into versioned files.
+Read PLAN.md before any change. The scope is closed: do not add features outside it.
+PLAN.md is local (it is in .gitignore): do not copy its content into versioned files.
 
 ## Language
 - Everything in the repository is in English: code (identifiers, comments, test names, internal
   error messages), domain terms (tools, tables, columns, appointment types, environment variables;
-  glossary in PLANO.md section 4.1), this file, the README, commit messages, PR titles and descriptions.
+  glossary in PLAN.md section 4.1), this file, the README, commit messages, PR titles and descriptions.
 - Patient-facing text is pt-BR: system prompt, agent replies, clinic documents (`docs-clinic/`).
 - Conversation with the repository owner is in Portuguese.
 
@@ -39,7 +39,7 @@ MCP SDK (TypeScript), Transformers.js (local embeddings, multilingual-e5-small),
 - Times as `timestamptz`, time zone `America/Sao_Paulo`.
 - Patient identity comes from the session (environment variable). NEVER as a tool argument.
 - Write tools require host confirmation (`confirm` function injected into the loop). Do not rely on the prompt alone.
-- `book_appointment` is idempotent per PLANO.md section 4.6 (`ON CONFLICT DO NOTHING`, never check-then-insert).
+- `book_appointment` is idempotent per PLAN.md section 4.6 (`ON CONFLICT DO NOTHING`, never check-then-insert).
 - Embeddings: `"query: "` prefix for search and `"passage: "` for ingestion, same model on both sides.
 - Lean tool results: only the fields needed.
 - Secrets only in `.env` (never in the repository).
