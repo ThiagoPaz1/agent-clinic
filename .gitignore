@@ -1,0 +1,5 @@
+PLANO.md
+node_modules/
+.env
+tasks/
+.claude/settings.local.json
