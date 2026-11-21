@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { loadConfig } from "./config.js";
+import { loadConfig } from "./config.ts";
 
 const DATABASE_URL = "postgres://clinica:clinica@localhost:5432/clinica";
 
